@@ -12,10 +12,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-orange-50 flex justify-center items-center">
-      <form
-        onSubmit={handleSubmit}
-        className="p-5 rounded max-w-md w-full"
-      >
+      <form onSubmit={handleSubmit} className="p-5 rounded max-w-md w-full">
         <img src={logo} alt="logo" className="w-36 mb-8" />
         <h2 className="text-2xl font-semibold">Welcome back</h2>
         <p className="text-[#5B5A70] mt-2 mb-8">

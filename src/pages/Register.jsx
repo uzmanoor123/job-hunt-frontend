@@ -6,15 +6,17 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit =  (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
   };
   return (
     <div className="min-h-screen bg-orange-50 flex justify-center items-center">
       <form onSubmit={handleSubmit} className=" p-5 rounded max-w-md w-full">
-        <img  src = {logo} alt="logo" className="w-36 mb-8"/>
+        <img src={logo} alt="logo" className="w-36 mb-8" />
         <h2 className="text-2xl font-semibold ">Create Your Account</h2>
-        <p className="text-[#5B5A70] mt-2 mb-8">it takes time less than a minute</p>
+        <p className="text-[#5B5A70] mt-2 mb-8">
+          it takes time less than a minute
+        </p>
         <div className="mb-4 mt-7">
           <label>Name</label>
           <input
@@ -56,7 +58,7 @@ const Register = () => {
           Create Account
         </button>
         <p className="text-center mt-2">
-          Already have an account? 
+          Already have an account?
           <Link to="/login" className="text-[#362F78] font-medium">
             Log in here
           </Link>
