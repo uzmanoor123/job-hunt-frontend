@@ -1,14 +1,49 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { BASE_URL } from "../config/envConfig";
+import {useNavigate} from "react-router-dom";
+import { useEffect } from "react";
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/home");
+    }
+  }, [navigate]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit =  async(e) => {
     e.preventDefault();
+     try {
+      const response = await fetch(`${BASE_URL}/register`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          password,
+        }),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        setName("");
+        setEmail("");
+        setPassword("");
+        navigate("/login");
+      } else {
+        alert(data.error);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
+
   return (
     <div className="min-h-screen bg-orange-50 flex justify-center items-center">
       <form onSubmit={handleSubmit} className=" p-5 rounded max-w-md w-full">
