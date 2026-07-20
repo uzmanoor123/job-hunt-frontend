@@ -1,7 +1,7 @@
 import { FiUpload } from "react-icons/fi";
 const UploadCV = () => {
     return (
-        <div className="max-w-[420px]  bg-white rounded-3xl border border-gray-200 p-6">
+        <div className="w-[420px] flex-shrink-0 bg-white rounded-3xl border border-gray-200 p-6">
             <h2 className="text-[22px] font-semibold text-[#23233F]">Your CV</h2>
             <p className="text-[#6C6C80] mt-2 text-[16px]">PDF only, up to 10MB.</p>
             <label

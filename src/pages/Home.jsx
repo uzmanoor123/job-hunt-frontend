@@ -1,19 +1,28 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import ResumeCard from "../components/ResumeCard";
-import JobSection from "../components/JobSection";                    
+import JobSection from "../components/JobSection";
+import ProfileCard from "../components/ProfileCard";
 const Home = () => {
   return (
-    <>
-      <Navbar />
-      <div className="max-w-7xl mx-auto">
-        <Hero />
-        <div className= " mt-8 gap-8 ">
+  <>
+  <Navbar />
+
+  <div className="max-w-[1440px] mx-auto px-5">
+    <Hero />
+
+    <div className="mt-8 flex items-start gap-6">
+      <div className="w-[420px] shrink-0">
         <ResumeCard />
-       <JobSection />
-       </div> 
+        <ProfileCard />
       </div>
-    </>
+
+      <div className="flex-1">
+        <JobSection />
+      </div>
+    </div>
+  </div>
+</>
   );
 };
 

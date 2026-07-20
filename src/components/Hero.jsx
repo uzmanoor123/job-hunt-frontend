@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <div className="max-w-7xl mx-auto px-5 py-5">
+        <div className="max-w-[1440px] mx-auto px-5 py-5">
             <h1 className="text-4xl font-semibold text-[#23233F] mt-5">
                 Welcome back, tester
             </h1>
