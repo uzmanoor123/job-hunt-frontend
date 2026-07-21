@@ -31,6 +31,27 @@ const jobs = [
         type: "Not specified",
         description: "Location: Washington, DC Salary: $60.00 USD Hourly - $65.00 USD Hourly Description: Our client is currently seeking a Front End Developer (Java Script, HTML, CSS) III Position Title: Front End Develo..."
     },
+             {
+        title: "Front End Developer (Java Script, HTML, CSS) III",
+        company: "Judge Group, Inc.",
+        location: "Washington, US",
+        type: "Not specified",
+        description: "Location: Washington, DC Salary: $60.00 USD Hourly - $65.00 USD Hourly Description: Our client is currently seeking a Front End Developer (Java Script, HTML, CSS) III Position Title: Front End Develo..."
+    },
+             {
+        title: "Front End Developer (Java Script, HTML, CSS) III",
+        company: "Judge Group, Inc.",
+        location: "Washington, US",
+        type: "Not specified",
+        description: "Location: Washington, DC Salary: $60.00 USD Hourly - $65.00 USD Hourly Description: Our client is currently seeking a Front End Developer (Java Script, HTML, CSS) III Position Title: Front End Develo..."
+    },
+             {
+        title: "Front End Developer (Java Script, HTML, CSS) III",
+        company: "Judge Group, Inc.",
+        location: "Washington, US",
+        type: "Not specified",
+        description: "Location: Washington, DC Salary: $60.00 USD Hourly - $65.00 USD Hourly Description: Our client is currently seeking a Front End Developer (Java Script, HTML, CSS) III Position Title: Front End Develo..."
+    },
 ];
 const JobSection = () => {
   return (
