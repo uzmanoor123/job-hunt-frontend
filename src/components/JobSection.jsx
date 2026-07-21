@@ -55,7 +55,7 @@ const jobs = [
 ];
 const JobSection = () => {
   return (
-    <div className="flex-1 bg-white border border-gray-200 rounded-3xl p-4">
+    <div className="flex-1 bg-white border border-gray-200 rounded-3xl p-6">
       <div className="flex justify-between items-center mb-3">
         <h2 className="text-[16px] font-semibold text-[#1B1B2F]">
           Matching jobs
@@ -66,7 +66,7 @@ const JobSection = () => {
         {jobs.map((job, index) => (
           <div
             key={index}
-            className="border rounded-2xl p-4 flex flex-col h-[340px] hover:shadow-md transition"
+            className="border rounded-2xl p-4 flex flex-col h-[310px] hover:shadow-md transition"
           >
             <h3 className="text-[14px] font-semibold text-[#23233F] leading-8">
               {job.title}
@@ -80,10 +80,10 @@ const JobSection = () => {
 
             <p className="text-[#5B5A70] mt-1 text-[12px]">{job.type}</p>
 
-            <p className="mt-3 text-[#5D5D74] leading-8 line-clamp-4 text-[14px] ">
+            <p className="mt-3 text-[#5D5D74] leading-7  text-[14px]">
               {job.description}
             </p>
-            <button className="mt-6 w-full bg-[#3F3A93] text-white py-2 rounded-xl font-medium hover:bg-[#342F7D] transition hover:cursor-pointer flex items-center justify-center gap-1">
+            <button className="mt-auto w-full bg-[#3F3A93] text-white py-2 rounded-xl font-medium hover:bg-[#342F7D] transition hover:cursor-pointer flex items-center justify-center gap-1">
              
               Apply now
                <FiArrowUpRight  size = {20}/>

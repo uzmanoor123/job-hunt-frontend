@@ -6,6 +6,7 @@ import ProfileCard from "../components/ProfileCard";
 const Home = () => {
   return (
   <>
+  <div className="bg-[#FAF8F5]"> 
   <Navbar />
 
   <div className="max-w-[1440px] mx-auto">
@@ -21,6 +22,7 @@ const Home = () => {
         <JobSection />
       </div>
     </div>
+  </div>
   </div>
 </>
   );
