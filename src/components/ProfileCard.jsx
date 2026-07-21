@@ -2,12 +2,10 @@ const ProfileCard = () => {
   return (
     <div className="bg-white border border-gray-200 rounded-3xl p-6 mt-7">
       <h2 className="text-[22px] font-semibold text-[#23233F]">Profile</h2>
-
       <div className="mt-6">
         <p className="text-[12px] uppercase tracking-wide text-[#A5A2B8] font-semibold">
           Summary
         </p>
-
         <p className="mt-3 text-[15px] leading-8 text-[#5D5D74]">
           As a Computer Science student with hands-on experience in web
           development using HTML, CSS, JavaScript, MySQL and PHP. I have worked
@@ -16,9 +14,7 @@ const ProfileCard = () => {
           skills.
         </p>
       </div>
-
       <hr className="my-6 border-gray-200" />
-
       <div>
         <p className="text-[12px] uppercase tracking-wide text-[#A5A2B8] font-semibold">
           Skills
@@ -42,25 +38,18 @@ const ProfileCard = () => {
           ))}
         </div>
       </div>
-
       <hr className="my-6 border-gray-200" />
-
       <div>
         <p className="text-[12px] uppercase tracking-wide text-[#A5A2B8] font-semibold">
           Experience
-        </p>
-        
-
+        </p>   
         <div className="mt-4 h-5 rounded-lg bg-[#F5F2EC]"></div>
       </div>
-
       <hr className="my-6 border-gray-200" />
-
       <div>
         <p className="text-[12px] uppercase tracking-wide text-[#A5A2B8] font-semibold">
           Education
         </p>
-
         <div className="mt-4 space-y-3">
           <div className="bg-[#F8F5EF] rounded-xl p-4">
             <h3 className="font-semibold text-[#23233F]">

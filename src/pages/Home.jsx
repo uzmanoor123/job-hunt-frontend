@@ -8,7 +8,7 @@ const Home = () => {
   <>
   <Navbar />
 
-  <div className="max-w-[1440px] mx-auto px-5">
+  <div className="max-w-[1440px] mx-auto">
     <Hero />
 
     <div className="mt-8 flex items-start gap-6">
