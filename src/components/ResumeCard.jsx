@@ -1,7 +1,22 @@
 import { FiUpload } from "react-icons/fi";
 import { useState } from "react";
+import { BASE_URL } from "../config/envConfig";
 const UploadCV = () => {
   const [selectedFile, setSelectedFile] = useState(null);
+
+  const handleUpload = async()=>{
+    const formData = new FormData();
+    formData.append("resume", selectedFile)
+    const response = await fetch(
+      `${BASE_URL}/upload`,
+      {
+        method: "POST",
+        body: formData
+      }
+    );
+    const data = await response.json()
+    console.log(data)
+  }
   return (
     <div className="w-[420px] flex-shrink-0 bg-white rounded-3xl border border-gray-200 p-6">
       <h2 className="text-[22px] font-semibold text-[#23233F]">Your CV</h2>
@@ -36,7 +51,7 @@ const UploadCV = () => {
           onChange={(e) => setSelectedFile(e.target.files[0])}
         />
       </label>
-      <button
+      <button onClick={handleUpload}
         disabled={!selectedFile}
         className={`w-full mt-6 py-3 rounded-2xl font-semibold text-lg
                 ${
